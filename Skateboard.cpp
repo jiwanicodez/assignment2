@@ -3,6 +3,9 @@
 //
 
 #include "Skateboard.h"
+#include <stdlib.h>   
+#include <time.h>   
+#include <cmath>   
 
 Skateboard::Skateboard() {
 }
@@ -10,9 +13,11 @@ Skateboard::Skateboard() {
 Skateboard::~Skateboard() = default;
 
 double Skateboard::mileageEstimate(double time) {
-    double mileage = 3 * time;
-    mileage += mileage * (myGearCount * 0.1);
-    return mileage;
+	srand (time(NULL));
+	double mileage = rand()% .5 + .1 * time;
+	if (time > 25 && time < 250)
+	mileage+= rand()% (time/3) + 1
+    	return floor(mileage);
 }
 
 string Bicycle::toString() {

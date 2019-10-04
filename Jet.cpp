@@ -5,6 +5,7 @@
 #include "Jet.h"
 #include <stdlib.h>
 #include <time.h>
+#include <cmath>
 
 Jet::Jet() {
     numberOfEngines = 1;
@@ -35,7 +36,7 @@ double Jet::mileageEstimate(double time) {
     	if (numberOfEngineSize > 2 && fuelType == "Rocket") {
         	mileage += mileage * 0.055;
     	}
-    	return mileage;
+    	return floor(mileage);
 }
 
 string Jet::toString() {
