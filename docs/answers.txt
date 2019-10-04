@@ -1,0 +1,85 @@
+a) warning: push.default is unset; its implicit value is changing in
+
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+
+and maintain the current behavior after the default changes, use:
+
+
+
+  git config --global push.default matching
+
+
+
+To squelch this message and adopt the new behavior now, use:
+
+
+
+  git config --global push.default simple
+
+
+
+See 'git help config' and search for 'push.default' for further information.
+
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+
+
+Username for 'https://github.com': jiwanicodez
+
+Password for 'https://jiwanicodez@github.com': 
+
+Counting objects: 5, done.
+
+Delta compression using up to 56 threads.
+
+Compressing objects: 100% (2/2), done.
+
+Writing objects: 100% (3/3), 300 bytes | 0 bytes/s, done.
+
+Total 3 (delta 1), reused 0 (delta 0)
+
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+
+To https://github.com/jiwanicodez/assignment2.git
+
+   f4975e5..38cbb68  master -> master
+
+b) 	command: git pull
+	number of commits: 9
+
+e)	Wed Sep 25 18:13:30 2019
+
+d)	1. Branches allow for clean changes so that unstable code doesn't
+	merge into main code base. Can be used to track changes. 
+	2. Allows for coordinating work among programmers
+
+e) 	git log: shows the commit logs 
+	git status: Displays paths that have differences between the index 
+	file and the current HEAD commit, paths that have differences between 
+	the working tree and the index file, and paths in the working tree 
+	that are not tracked by Git 
+
+f)	git log Vehicle.h
+
+g)	gitlog --grep=“file“
+
+h)	inheritance: the mechanism by which an object acquires properties of another object
+	polymorphism: one method with multiple implementations, each used depending upon situation
+	encapsulation: binding the data with the code that manipulates it
+
+i)	In the Integration Manager Workflow, each developer makes push to his/her own public 
+	repository, and pulls from the blessed\central repository. Integration conflict resolution
+	is done by the integration manager (centralized integration). Meanwhile in the Dictator and 
+	Lieutenants Workflow there is one central repository where everyone can pull but only the 
+	dictator can push to it. The Dictator repository merges changes in the lieutenant 
+	repositories and solves any arising conflicts. The Lieutenant repositories merges changes 
+	for some developers and solves conflicts. A developer pushes changes to the assigned 
+	lieutenant repository.
+
+j)	The Dictator and Lieutenants Workflow is better for big projects like with 100 people 
+	because it allows the project leader (the dictator) to delegate much of the work and 
+	collect large subsets of code at multiple points before integrating them. 
+
+
