@@ -7,7 +7,9 @@
 #include <time.h>   
 #include <cmath>   
 
-Skateboard::Skateboard() {
+Skateboard::Skateboard(){ 
+	setBrand("unknown");
+    	setModel("unknown");
 }
 
 Skateboard::~Skateboard() = default;
@@ -22,6 +24,5 @@ double Skateboard::mileageEstimate(double time) {
 
 string Bicycle::toString() {
     string s = "-> Skateboard\n\t";
-    return "-> Skateboard\n" + Vehicle::toString() + "\n\tGears: " +
-           to_string(myGearCount);
+    return "-> Skateboard\n" + Vehicle::toString()
 }
